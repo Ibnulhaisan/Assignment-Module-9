@@ -19,3 +19,10 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/',[HomeController::class,'page']);
+
+Route::get('home',[HomeController::class,'home'])->name('homeInfo');
+Route::get('about',[HomeController::class,'about'])->name('aboutInfo');
+Route::get('contact',[HomeController::class,'contact'])->name('contact');
+Route::get('project',[HomeController::class,'project'])->name('projectInfo');
+
+
